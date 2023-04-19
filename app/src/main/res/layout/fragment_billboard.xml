@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BillboardFragment"
+    android:background="@color/Primary"
+    >
+
+    <TextView
+        android:id="@+id/BillboardTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/billboard_text"
+        android:textColor="@color/white"
+        android:textSize="@dimen/title_gap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="350dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="@dimen/medium_gap"
+        android:backgroundTint="@color/CardColor"
+        android:elevation="@dimen/card_elevation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BillboardTextView"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        >
+
+
+        <ImageView
+            android:id="@+id/MovieCardImageView"
+            android:layout_width="150dp"
+            android:layout_height="125dp"
+            android:src="@drawable/star_wars"
+            android:layout_marginStart="8dp"
+            />
+
+        <TextView
+            android:id="@+id/MovieCardTextViewDescription"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="175dp"
+            android:layout_marginTop="@dimen/big_gap"
+            android:layout_marginEnd="@dimen/big_gap"
+            android:text="@string/card_movie_description"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/CalificationCardTextViewDescription"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="175dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginEnd="@dimen/big_gap"
+            android:text="9.8"
+            android:textColor="@color/Calification" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButtonToMovie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/medium_gap"
+        android:layout_marginBottom="@dimen/medium_gap"
+        android:backgroundTint="@color/ButtonColor"
+        android:clickable="true"
+        android:contentDescription="Add new movie"
+        android:src="@drawable/baseline_add_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

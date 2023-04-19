@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Primary"
+    tools:context=".MovieFragment">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/image_show_width"
+        android:layout_height="@dimen/image_show_height"
+        android:layout_marginTop="@dimen/default_gap"
+        android:contentDescription="Star wars image"
+        android:src="@drawable/star_wars"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <TextView
+        android:id="@+id/DescriptionTextViewMovieFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/movie_description_text"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        />
+
+    <TextView
+        android:id="@+id/CategoryTextViewDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/Category_text_description"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DescriptionTextViewMovieFragment" />
+
+    <TextView
+        android:id="@+id/CalificationTextViewDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/medium_gap"
+        android:text="@string/calification_text_description"
+        android:textColor="@color/Calification"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/CategoryTextViewDescription"
+        app:layout_constraintTop_toTopOf="@+id/CategoryTextViewDescription" />
+
+    <TextView
+        android:id="@+id/DescriptionTextViewDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/medium_gap"
+        android:layout_marginTop="@dimen/big_gap"
+        android:layout_marginEnd="@dimen/medium_gap"
+        android:text="¡Guerra! La República se desmorona bajo los ataques del despiadado Lord Sith,
+        el conde Dooku. Hay héroes en ambos bandos, pero el mal está por doquier. En una contundente
+        jugada, el diabólico líder droide, el general Grievous, ha irrumpido en la capital de la
+        República y ha secuestrado al Canciller Palpatine, líder del senado Galáctico. Mientras
+        el ejército droide separatista trata de huir con su valioso rehén, dos caballeros Jedi
+        inician una misión desesperada para liberar al Canciller cautivo."
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CategoryTextViewDescription" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

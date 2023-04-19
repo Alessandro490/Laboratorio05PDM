@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CreateMovieFragment"
+    android:background="@color/Primary">
+
+    <TextView
+        android:id="@+id/NewMovieTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_movie_text"
+        android:textSize="@dimen/title_gap"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/card_height"
+        android:layout_marginStart="@dimen/medium_gap"
+        android:layout_marginTop="@dimen/big_gap"
+        android:layout_marginEnd="@dimen/medium_gap"
+        android:backgroundTint="@color/CardColor"
+        android:elevation="@dimen/card_elevation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <TextView
+            android:id="@+id/NameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_gap"
+            android:text="@string/category_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_card_size" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/card_height"
+        android:layout_marginStart="@dimen/medium_gap"
+        android:layout_marginTop="@dimen/big_gap"
+        android:layout_marginEnd="@dimen/medium_gap"
+        android:backgroundTint="@color/CardColor"
+        android:elevation="@dimen/card_elevation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NewMovieTextView">
+
+        <TextView
+            android:id="@+id/CategoryTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_gap"
+            android:text="@string/name_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_card_size" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/card_height"
+        android:layout_marginStart="@dimen/medium_gap"
+        android:layout_marginTop="@dimen/big_gap"
+        android:layout_marginEnd="@dimen/medium_gap"
+        android:backgroundTint="@color/CardColor"
+        android:elevation="@dimen/card_elevation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView4">
+
+        <TextView
+            android:id="@+id/DescriptionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_gap"
+            android:text="@string/description_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_card_size" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/card_height"
+        android:layout_marginStart="@dimen/medium_gap"
+        android:layout_marginTop="@dimen/big_gap"
+        android:layout_marginEnd="@dimen/medium_gap"
+        android:backgroundTint="@color/CardColor"
+        android:elevation="@dimen/card_elevation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+        <TextView
+            android:id="@+id/CalificationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/small_gap"
+            android:text="@string/califaction_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_card_size" />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/SubmitNewMovie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/small_gap"
+        android:backgroundTint="@color/ButtonColor"
+        android:text="@string/submit_text_button"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
